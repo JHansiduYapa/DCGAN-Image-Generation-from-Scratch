@@ -12,8 +12,8 @@ This repository contains the implementation of a Deep Convolutional Generative A
 
 ## 2. Explanation of Loss Functions
 In DCGAN, we have two main components:
-- **Generator Loss**: Measures how well the generator fools the discriminator.
-- **Discriminator Loss**: Measures how well the discriminator distinguishes between real and generated images.
+**Generator Loss**: Measures how well the generator fools the discriminator.
+**Discriminator Loss**: Measures how well the discriminator distinguishes between real and generated images.
 
 These losses help improve both components iteratively.
 
