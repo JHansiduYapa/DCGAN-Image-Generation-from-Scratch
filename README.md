@@ -1,5 +1,3 @@
----
-
 # Deep Convolutional Generative Adversarial Network (DCGAN)
 
 This repository contains the implementation of a Deep Convolutional Generative Adversarial Network (DCGAN) for generating realistic images using the MNIST dataset.
@@ -8,12 +6,12 @@ This repository contains the implementation of a Deep Convolutional Generative A
 **Transpose convolution** is a crucial operation used in the generator of DCGANs to upsample feature maps. It works by reversing the convolution operation, allowing for the creation of larger outputs from smaller inputs.
 
 ### Visual Representation of Transpose Convolution
-<img src="https://github.com/janith99hansidu/DCGAN-PyTorch/src/transpose_convolution.png" alt="Transpose Convolution" width="500"/>
+![Transpose Convolution](https://raw.githubusercontent.com/janith99hansidu/DCGAN-PyTorch/main/transpose_convolution.png)
 
 ## 2. Explanation of Loss Functions
 In DCGAN, we have two main components:
-**Generator Loss**: Measures how well the generator fools the discriminator.
-**Discriminator Loss**: Measures how well the discriminator distinguishes between real and generated images.
+- **Generator Loss**: Measures how well the generator fools the discriminator.
+- **Discriminator Loss**: Measures how well the discriminator distinguishes between real and generated images.
 
 These losses help improve both components iteratively.
 
@@ -24,19 +22,19 @@ The generator’s goal is to minimize `log(1 - D(G(z)))`, but to improve trainin
 The network was trained using the MNIST dataset, which consists of 28x28 grayscale images of handwritten digits. Below are example results showing how the loss changes over time:
 
 ### Training Loss Graphs
-<img src="https://github.com/janith99hansidu/DCGAN-PyTorch/src/loss.png" alt="Generator and Discriminator Losses" width="500"/>
+![Training Loss Graphs](https://raw.githubusercontent.com/janith99hansidu/DCGAN-PyTorch/main/loss.png)
 
 ## 4. Series of Training Results
 Below is a GIF showing the progression of generated images as training progresses. It helps visualize how the generator improves and produces increasingly realistic images.
 
 ### GIF of Training Progress
-<img src="https://github.com/janith99hansidu/DCGAN-PyTorch/src/learning.gif" alt="Generated images over training epochs" width="500"/>
+![Training Progress](https://raw.githubusercontent.com/janith99hansidu/DCGAN-PyTorch/main/learning.gif)
 
 ## 5. Final Results: Real vs. Generated Images
 Here’s a comparison between real MNIST images and the final outputs from the trained DCGAN model.
 
 ### Side-by-Side Comparison
-<img src="https://github.com/janith99hansidu/DCGAN-PyTorch/src/real_vs_fake.png" alt="Comparison" width="500"/>
+![Real vs Generated Images](https://raw.githubusercontent.com/janith99hansidu/DCGAN-PyTorch/main/real_vs_fake.png)
 
 ## References
 
@@ -46,9 +44,6 @@ Here’s a comparison between real MNIST images and the final outputs from the t
 4. [PyTorch-GAN Repository by Erik Lindernoren](https://github.com/eriklindernoren/PyTorch-GAN)
 5. [Vanilla GAN PyTorch Notebook by gordicaleksa](https://github.com/gordicaleksa/pytorch-GANs/blob/master/Vanilla%20GAN%20(PyTorch).ipynb)
 
-
 ## Conclusion
 
 This project demonstrates how DCGANs can effectively generate realistic images from simple noise vectors. By iteratively training the generator and the discriminator, the network learns to produce images that resemble real data.
-
----
