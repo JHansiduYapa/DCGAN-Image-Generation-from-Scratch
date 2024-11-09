@@ -6,7 +6,7 @@ This repository contains the implementation of a Deep Convolutional Generative A
 **Transpose convolution** is a crucial operation used in the generator of DCGANs to upsample feature maps. It works by reversing the convolution operation, allowing for the creation of larger outputs from smaller inputs.
 
 ### Visual Representation of Transpose Convolution
-![Transpose Convolution](https://raw.githubusercontent.com/janith99hansidu/DCGAN-PyTorch/main/transpose_convolution.png)
+![Transpose Convolution](https://github.com/janith99hansidu/DCGAN-PyTorch/blob/main/src/transpose_convolution.png)
 
 ## 2. Explanation of Loss Functions
 In DCGAN, we have two main components:
@@ -22,19 +22,19 @@ The generator’s goal is to minimize `log(1 - D(G(z)))`, but to improve trainin
 The network was trained using the MNIST dataset, which consists of 28x28 grayscale images of handwritten digits. Below are example results showing how the loss changes over time:
 
 ### Training Loss Graphs
-![Training Loss Graphs](https://raw.githubusercontent.com/janith99hansidu/DCGAN-PyTorch/main/loss.png)
+![Training Loss Graphs](https://github.com/janith99hansidu/DCGAN-PyTorch/blob/main/src/loss.png)
 
 ## 4. Series of Training Results
 Below is a GIF showing the progression of generated images as training progresses. It helps visualize how the generator improves and produces increasingly realistic images.
 
 ### GIF of Training Progress
-![Training Progress](https://raw.githubusercontent.com/janith99hansidu/DCGAN-PyTorch/main/learning.gif)
+![Training Progress](https://github.com/janith99hansidu/DCGAN-PyTorch/blob/main/src/learning.gif)
 
 ## 5. Final Results: Real vs. Generated Images
 Here’s a comparison between real MNIST images and the final outputs from the trained DCGAN model.
 
 ### Side-by-Side Comparison
-![Real vs Generated Images](https://raw.githubusercontent.com/janith99hansidu/DCGAN-PyTorch/main/real_vs_fake.png)
+![Real vs Generated Images](https://github.com/janith99hansidu/DCGAN-PyTorch/blob/main/src/real_vs_fake.png)
 
 ## References
 
